@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AB_APU_Recipe_Book.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 
 namespace AB_APU_Recipe_Book.View
 {
     /// <summary>
     /// Interaction logic for DialogView.xaml
     /// </summary>
-    public partial class IngredientView : UserControl
+    public partial class IngredientView : UserControl, ICloseable
     {
+        public object DialogResultCustom { get; set; }
         public IngredientView()
         {
             InitializeComponent();
         }
+        public void Close()
+        {
+            Window.GetWindow(this).Close();
+        }
+
     }
 }

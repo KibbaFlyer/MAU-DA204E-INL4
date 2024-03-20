@@ -31,16 +31,16 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                
+
                 <Label Content="Name of recipe" Grid.Row="0" Margin="5"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Grid.ColumnSpan="2" Text="{Binding RecipeName}"/>
+                <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Grid.ColumnSpan="2" Text="{Binding RecipeName, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label Content="Category" Grid.Row="1" Margin="5"/>
-                <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" ItemsSource="{Binding Categories}"/>
+                <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" ItemsSource="{Binding Categories, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Content="Add ingredients" Grid.Row="1" Grid.Column="2" Margin="5" Command="{Binding AddIngredients}"/>
-                <TextBox  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="5"/>
+                <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Content="Add recipe" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Command="{Binding AddRecipe}"/>
-                
             </Grid>
         </GroupBox>
+        <ListBox Grid.Column="1" Margin="5" ItemsSource="{Binding Recipes}" DisplayMemberPath="Name"/>
     </Grid>
 </UserControl>

@@ -1,26 +1,44 @@
 ﻿using AB_APU_Recipe_Book.View;
+using AB_APU_Recipe_Book.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Automation.Provider;
 
 namespace AB_APU_Recipe_Book.Services
 {
     public interface IDialogService
     {
-        void ShowDialog(string name);
+        void ShowDialog(string name, object viewModel, Action<object> callback);
     }
     class DialogService : IDialogService
     {
-        public void ShowDialog(string name)
+        public void ShowDialog(string name, object viewModel, Action<object> callback)
         {
             var dialog = new DialogView();
 
-            var type = Type.GetType($"AB_APU_Recipe_Book.View.{name}");
+            EventHandler closeEventHandler = null;
 
-            dialog.Content = Activator.CreateInstance(type);
+            closeEventHandler = (s, e) =>
+            {
+                callback(viewModel);
+                dialog.Closed -= closeEventHandler;
+            };
+
+            dialog.Closed += closeEventHandler;
+
+            var viewType = Type.GetType($"AB_APU_Recipe_Book.View.{name}");
+
+            var viewInstance = Activator.CreateInstance(viewType) as FrameworkElement;
+
+            viewInstance.DataContext = viewModel;
+
+            dialog.Content = viewInstance;
+
+
 
             dialog.ShowDialog();
         }

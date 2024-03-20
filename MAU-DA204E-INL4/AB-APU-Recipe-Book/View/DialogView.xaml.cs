@@ -19,6 +19,7 @@ namespace AB_APU_Recipe_Book.View
     /// </summary>
     public partial class DialogView : Window
     {
+        public object DialogResultCustom { get; set; }
         public DialogView()
         {
             InitializeComponent();

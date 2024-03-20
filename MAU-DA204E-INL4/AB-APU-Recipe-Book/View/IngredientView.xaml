@@ -30,8 +30,8 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBox Background="White" Grid.Row="0" Margin="5" Text="{Binding NewIngredient}"/>
-                <ListBox Background="White" Grid.Row="1" Grid.RowSpan="4" Margin="5" ItemsSource="{Binding SavedIngredients}"/>
+                <TextBox Background="White" Grid.Row="0" Margin="5" Text="{Binding NewIngredient, UpdateSourceTrigger=PropertyChanged}"/>
+                <ListBox Background="White" Grid.Row="1" Grid.RowSpan="4" Margin="5" ItemsSource="{Binding SavedIngredients}" SelectedItem="{Binding SelectedIngredient}"/>
                 <Button Content="Add" Grid.Column="1" Grid.Row="0" Margin="5" Command="{Binding Add}"/>
                 <Button Content="Edit" Grid.Column="1" Grid.Row="1" Margin="5" Command="{Binding Edit}"/>
                 <Button Content="Delete" Grid.Column="1" Grid.Row="2" Margin="5" Command="{Binding Delete}"/>
@@ -42,8 +42,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="OK" Grid.Column="0" Width="100" Margin="5" Command="{Binding Ok}"/>
-            <Button Content="Cancel" Grid.Column="1" Width="100" Margin="5" Command="{Binding Cancel}"/>
+            <Button Content="OK" Grid.Column="0" Width="100" Margin="5" Command="{Binding Ok}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
+            <Button Content="Cancel" Grid.Column="1" Width="100" Margin="5" Command="{Binding Cancel}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
         </Grid>
 
     </Grid>

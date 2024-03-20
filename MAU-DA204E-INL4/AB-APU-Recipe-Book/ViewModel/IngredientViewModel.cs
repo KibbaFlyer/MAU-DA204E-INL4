@@ -1,13 +1,16 @@
 ﻿using AB_APU_Recipe_Book.Commands;
 using AB_APU_Recipe_Book.Services;
+using AB_APU_Recipe_Book.View;
 using Prism.Commands;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Media.Media3D;
 
 namespace AB_APU_Recipe_Book.ViewModel
 {
@@ -15,7 +18,8 @@ namespace AB_APU_Recipe_Book.ViewModel
     {
         #region Private fields
         private string _newIngredient;
-        private List<string> _savedIngredients;
+        private string _selectedIngredient;
+        private ObservableCollection<string> _savedIngredients = new ObservableCollection<string>();
         #endregion
         #region Public fields
         public int NumberOfIngredients
@@ -27,80 +31,98 @@ namespace AB_APU_Recipe_Book.ViewModel
             get => _newIngredient;
             set
             {
-                if (NewIngredient != value)
+                if (_newIngredient != value)
                 {
                     _newIngredient = value;
                     OnPropertyChanged(nameof(NewIngredient));
                 }
             }
         }
-        public List<string> SavedIngredients
+        public ObservableCollection<string> SavedIngredients
         {
             get => _savedIngredients;
             set
             {
-                if (SavedIngredients != value)
+                if (_savedIngredients != value)
                 {
                     _savedIngredients = value;
                     OnPropertyChanged(nameof(SavedIngredients));
+                    OnPropertyChanged(nameof(NewIngredient));
+                }
+            }
+        }
+        public string SelectedIngredient
+        {
+            get => _selectedIngredient;
+            set
+            {
+                if (_selectedIngredient != value)
+                {
+                    _selectedIngredient = value;
+                    OnPropertyChanged(nameof(SelectedIngredient));
                 }
             }
         }
 
-        public BaseICommand Add { get; }
-        public BaseICommand Edit { get; }
-        public BaseICommand Delete { get; }
-        public BaseICommand Ok { get; }
-        public BaseICommand Cancel { get; }
+        public BaseICommand<object> Add { get; }
+        public BaseICommand<object> Edit { get; }
+        public BaseICommand<object> Delete { get; }
+        public BaseICommand<ICloseable> Ok { get; }
+        public BaseICommand<ICloseable> Cancel { get; }
         #endregion
         public IngredientViewModel() 
         {
-            Add = new BaseICommand(AddAction, CanAdd);
-            Edit = new BaseICommand(EditAction, CanEdit);
-            Delete = new BaseICommand(DeleteAction, CanDelete);
-            Ok = new BaseICommand(OkAction, CanOk);
-            Cancel = new BaseICommand(CancelAction, CanCancel);
+            Add = new BaseICommand<object>(AddAction, CanAdd);
+            Edit = new BaseICommand<object>(EditAction, CanEdit);
+            Delete = new BaseICommand<object>(DeleteAction, CanDelete);
+            Ok = new BaseICommand<ICloseable>(OkAction, CanOk);
+            Cancel = new BaseICommand<ICloseable>(CancelAction, CanCancel);
         }
         #region Methods
-        private bool CanAdd()
+        private bool CanAdd(object parameter)
+        {
+            return _newIngredient != null && !_savedIngredients.Contains(_newIngredient);
+        }
+        private bool CanEdit(object parameter)
+        {
+            return _selectedIngredient != null && _newIngredient != null && _newIngredient != _selectedIngredient && !_savedIngredients.Contains(_newIngredient);
+        }
+        private bool CanDelete(object parameter)
+        {
+            return _selectedIngredient != null;
+        }
+        private bool CanOk(object parameter)
         {
             return true;
         }
-        private bool CanEdit()
+        private bool CanCancel(object parameter)
         {
             return true;
         }
-        private bool CanDelete()
+        private void AddAction(object parameter)
         {
-            return true;
+            SavedIngredients.Add(_newIngredient);
+            NewIngredient = null;
         }
-        private bool CanOk()
+        private void EditAction(object parameter)
         {
-            return true;
+            int index = _savedIngredients.IndexOf(_selectedIngredient);
+            SavedIngredients[index] = _newIngredient;
+            NewIngredient = null;
         }
-        private bool CanCancel()
+        private void DeleteAction(object parameter)
         {
-            return true;
+            SavedIngredients.Remove(_selectedIngredient);
         }
-        private void AddAction()
+        private void OkAction(ICloseable window)
         {
-
+            window.DialogResultCustom = this;
+            window.Close();
         }
-        private void EditAction()
+        private void CancelAction(ICloseable window)
         {
-
-        }
-        private void DeleteAction()
-        {
-
-        }
-        private void OkAction()
-        {
-
-        }
-        private void CancelAction()
-        {
- 
+            window.DialogResultCustom = null;
+            window.Close();
         }
         #endregion
     }
