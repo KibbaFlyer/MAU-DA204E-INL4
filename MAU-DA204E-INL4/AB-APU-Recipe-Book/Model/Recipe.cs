@@ -9,10 +9,10 @@ namespace AB_APU_Recipe_Book.Model
 {
     internal class Recipe
     {
-        internal string Name { get; set; }
-        internal string Description { get; set; }
-        internal FoodCategory Category { get; set; }
-        internal ObservableCollection<string> Ingredients { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public FoodCategory Category { get; set; }
+        public ObservableCollection<string> Ingredients { get; set; }
 
     }
 }

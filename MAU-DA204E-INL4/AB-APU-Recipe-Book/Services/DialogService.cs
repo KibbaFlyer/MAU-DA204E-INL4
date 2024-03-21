@@ -12,11 +12,11 @@ namespace AB_APU_Recipe_Book.Services
 {
     public interface IDialogService
     {
-        void ShowDialog(string name, object viewModel, Action<object> callback);
+        void ShowDialog(string name, object viewModel, Action<object, object> callback);
     }
     class DialogService : IDialogService
     {
-        public void ShowDialog(string name, object viewModel, Action<object> callback)
+        public void ShowDialog(string name, object viewModel, Action<object, object> callback)
         {
             var dialog = new DialogView();
 
@@ -24,7 +24,7 @@ namespace AB_APU_Recipe_Book.Services
 
             closeEventHandler = (s, e) =>
             {
-                callback(viewModel);
+                callback(viewModel, dialog.ToString());
                 dialog.Closed -= closeEventHandler;
             };
 
@@ -37,8 +37,6 @@ namespace AB_APU_Recipe_Book.Services
             viewInstance.DataContext = viewModel;
 
             dialog.Content = viewInstance;
-
-
 
             dialog.ShowDialog();
         }

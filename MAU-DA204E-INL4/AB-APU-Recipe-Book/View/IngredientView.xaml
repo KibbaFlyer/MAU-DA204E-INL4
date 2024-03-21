@@ -17,7 +17,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Label Content="Number of Ingredients" Grid.Row="0" HorizontalAlignment="Left" Margin="5"/>
-        <Label Content="{Binding NumberOfIngredients}" Grid.Row="0" HorizontalAlignment="Right" Margin="5"/>
+        <Label Content="{Binding SavedIngredients.Count}" Grid.Row="0" HorizontalAlignment="Right" Margin="5"/>
         <GroupBox Header="Ingredient"  Grid.Row="1" Grid.RowSpan="1" Margin="5">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -42,8 +42,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="OK" Grid.Column="0" Width="100" Margin="5" Command="{Binding Ok}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
-            <Button Content="Cancel" Grid.Column="1" Width="100" Margin="5" Command="{Binding Cancel}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
+            <Button Content="OK" Grid.Column="0" Width="100" Margin="5" Click="Ok_Button_Click" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
+            <Button Content="Cancel" Grid.Column="1" Width="100" Margin="5" Click="Cancel_Button_Click" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
         </Grid>
 
     </Grid>

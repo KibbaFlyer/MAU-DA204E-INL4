@@ -8,7 +8,6 @@ namespace AB_APU_Recipe_Book.Services
 {
     internal interface ICloseable
     {
-        public object DialogResultCustom { get; set; }
-        void Close();
+        internal void Close();
     }
 }

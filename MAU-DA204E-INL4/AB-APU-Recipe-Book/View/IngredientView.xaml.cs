@@ -20,17 +20,24 @@ namespace AB_APU_Recipe_Book.View
     /// <summary>
     /// Interaction logic for DialogView.xaml
     /// </summary>
-    public partial class IngredientView : UserControl, ICloseable
+    public partial class IngredientView : UserControl
     {
-        public object DialogResultCustom { get; set; }
         public IngredientView()
         {
             InitializeComponent();
         }
-        public void Close()
-        {
-            Window.GetWindow(this).Close();
-        }
 
+        private void Ok_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = this.Parent as Window;
+            window.DialogResult = true;
+            window.Close();
+        }
+        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var window = this.Parent as Window;
+            window.DialogResult = false;
+            window.Close();
+        }
     }
 }
