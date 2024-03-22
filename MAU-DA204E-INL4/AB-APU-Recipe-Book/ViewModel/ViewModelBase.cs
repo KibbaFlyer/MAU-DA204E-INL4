@@ -10,6 +10,7 @@ namespace AB_APU_Recipe_Book.ViewModel
 {
     /// <summary>
     /// A base ViewModel class to implement OnPropertyChanged
+    /// This is to allow for reactiveness of the ViewModels
     /// </summary>
     public class ViewModelBase : INotifyPropertyChanged
     {

@@ -18,7 +18,10 @@ using System.Xml.Serialization;
 namespace AB_APU_Recipe_Book.View
 {
     /// <summary>
-    /// Interaction logic for DialogView.xaml
+    /// Interaction logic for IngredientView.xaml
+    /// Implements button click logic for DialogResult for the parent Window
+    /// in order to check for canceled operations
+    /// Is a UserControl and meant to be hosted in a parent Window
     /// </summary>
     public partial class IngredientView : UserControl
     {
@@ -31,13 +34,11 @@ namespace AB_APU_Recipe_Book.View
         {
             var window = this.Parent as Window;
             window.DialogResult = true;
-            window.Close();
         }
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
             var window = this.Parent as Window;
             window.DialogResult = false;
-            window.Close();
         }
     }
 }

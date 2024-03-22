@@ -17,11 +17,13 @@ namespace AB_APU_Recipe_Book.View
 {
     /// <summary>
     /// Interaction logic for RecipeBookView.xaml
+    /// Is a UserControl and meant to be hosted in a parent Window
     /// </summary>
     public partial class RecipeBookView : UserControl
     {
         public RecipeBookView()
         {
+            // Sets up the ViewModel
             DataContext = new ViewModel.RecipeBookViewModel();
             InitializeComponent();
         }

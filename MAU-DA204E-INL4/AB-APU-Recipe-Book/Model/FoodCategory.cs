@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AB_APU_Recipe_Book.Model
 {
+    /// <summary>
+    /// Enumerator of Food Categories
+    /// </summary>
     internal enum FoodCategory
     {
         Meats,

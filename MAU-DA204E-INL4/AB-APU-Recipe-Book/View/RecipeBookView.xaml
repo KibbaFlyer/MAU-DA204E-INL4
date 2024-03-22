@@ -19,7 +19,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <GroupBox Header="Add new recipe" Margin="5">
+        <GroupBox Header="{Binding GroupBoxName}" Margin="5" Background="{Binding GroupBoxBackground}">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -36,7 +36,7 @@
                 <Label Content="Name of recipe" Grid.Row="0" Margin="5"/>
                 <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Grid.ColumnSpan="2" Text="{Binding CurrentRecipe.Name, UpdateSourceTrigger=PropertyChanged}"/>
                 <Label Content="Category" Grid.Row="1" Margin="5"/>
-                <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" ItemsSource="{Binding Categories, UpdateSourceTrigger=PropertyChanged}" SelectedValue="{Binding CurrentRecipe.Category}"/>
+                <ComboBox Grid.Row="1" Grid.Column="1" Margin="5" IsEditable="False" ItemsSource="{Binding Categories, UpdateSourceTrigger=PropertyChanged}" SelectedValue="{Binding CurrentRecipe.Category}"/>
                 <Button Content="Add ingredients" Grid.Row="1" Grid.Column="2" Margin="5" Command="{Binding AddIngredients}"/>
                 <TextBox TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Text="{Binding CurrentRecipe.Description, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Content="Add recipe" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="5" Command="{Binding AddRecipe}"/>
@@ -49,12 +49,16 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <DataGrid Grid.Row="0" Margin="5" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" ItemsSource="{Binding Recipes}" SelectedItem="{Binding SavedRecipeSelection}">
+                <DataGrid.InputBindings>
+                    <MouseBinding Gesture="LeftDoubleClick" Command="{Binding LeftDoubleClick}"/>
+                </DataGrid.InputBindings>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
                     <DataGridTextColumn Header="Category" Binding="{Binding Category}" Width="Auto"/>
-                    <DataGridTextColumn Header="No. of ingredients" Binding="{Binding Ingredients.Count}" Width="Auto"/>
+                    <DataGridTextColumn Header="No. of ingredients" Binding="{Binding IngredientCount}" Width="Auto"/>
                 </DataGrid.Columns>
             </DataGrid>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
@@ -62,6 +66,7 @@
                 <Button Content="Delete" Margin="5" Command="{Binding Delete}" Width="100"/>
                 <Button Content="Clear Selection" Margin="5" Command="{Binding ClearSelection}" Width="100"/>
             </StackPanel>
+            <Label Grid.Row="2" HorizontalAlignment="Center" Content="Double-click on an item for ingredients and cooking instructions!"/>
         </Grid>
 
 

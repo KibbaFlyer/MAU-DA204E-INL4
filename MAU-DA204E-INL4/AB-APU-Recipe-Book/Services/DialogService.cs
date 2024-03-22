@@ -10,13 +10,22 @@ using System.Windows.Automation.Provider;
 
 namespace AB_APU_Recipe_Book.Services
 {
+    /// <summary>
+    /// IDialogService is an interface to show a dialog from a ViewModel
+    /// This is order to decouple dialogs from the parent ViewModel
+    /// Inspired by Brian Lagunas: https://www.youtube.com/watch?v=S8hEjLahNtU
+    /// </summary>
     public interface IDialogService
     {
-        void ShowDialog(string name, object viewModel, Action<object, object> callback);
+        void ShowDialog(string name, string windowTitle, object viewModel, Action<object, object> callback);
     }
+    /// <summary>
+    /// The DialogService implements the logic for a dialog and the callback of it as it closes
+    /// Inspired by Brian Lagunas: https://www.youtube.com/watch?v=S8hEjLahNtU
+    /// </summary>
     class DialogService : IDialogService
     {
-        public void ShowDialog(string name, object viewModel, Action<object, object> callback)
+        public void ShowDialog(string name, string windowTitle, object viewModel, Action<object, object> callback)
         {
             var dialog = new DialogView();
 
@@ -24,7 +33,7 @@ namespace AB_APU_Recipe_Book.Services
 
             closeEventHandler = (s, e) =>
             {
-                callback(viewModel, dialog.ToString());
+                callback(viewModel, dialog.DialogResult.ToString());
                 dialog.Closed -= closeEventHandler;
             };
 
@@ -35,6 +44,8 @@ namespace AB_APU_Recipe_Book.Services
             var viewInstance = Activator.CreateInstance(viewType) as FrameworkElement;
 
             viewInstance.DataContext = viewModel;
+
+            dialog.Title = windowTitle;
 
             dialog.Content = viewInstance;
 
