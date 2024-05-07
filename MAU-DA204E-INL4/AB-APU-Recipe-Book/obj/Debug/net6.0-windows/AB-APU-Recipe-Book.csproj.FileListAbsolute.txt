@@ -25,6 +25,7 @@
 \\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\ref\AB-APU-Recipe-Book.dll
 \\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\AB-APU-Recipe-Book.csproj.AssemblyReference.cache
 \\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\bin\Debug\net6.0-windows\Prism.dll
-\\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\AB-APU-Recipe-Book.csproj.CopyComplete
 \\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\View\DialogView.g.cs
 \\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\View\DialogView.baml
+\\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\AB-APU-Recipe-Book.sourcelink.json
+\\Mac\Home\Documents\GitHub\MAU-DA204E-INL4\MAU-DA204E-INL4\AB-APU-Recipe-Book\obj\Debug\net6.0-windows\AB-APU-R.C97F18C2.Up2Date

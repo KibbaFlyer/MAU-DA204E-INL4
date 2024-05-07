@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\viewmodel\\recipebookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\services\\dialogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\ingredientview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\recipebookview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\ingredientview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\viewmodel\\ingredientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\model\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\model\\foodcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\dialogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\model\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\dialogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376D6FCA-0FA1-4B67-9613-5E085720D6D1}|AB-APU-Recipe-Book\\AB-APU-Recipe-Book.csproj|\\\\mac\\home\\documents\\github\\mau-da204e-inl4\\mau-da204e-inl4\\ab-apu-recipe-book\\view\\recipebookview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 231,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 195,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\MainWindow.xaml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\MainWindow.xaml",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-07T07:08:49.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\Recipe.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\Model\\Recipe.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\Recipe.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\Model\\Recipe.cs",
+              "ViewState": "AQIAAAYAAACAZmZmZqYowBQAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T09:25:27.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IngredientView.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\IngredientView.xaml.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\IngredientView.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\IngredientView.xaml.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\IngredientView.xaml.cs",
+              "ViewState": "AQIAAAkAAAAAZmZmZuYcwCUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T20:16:44.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecipeBookView.xaml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\RecipeBookView.xaml",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\RecipeBookView.xaml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\RecipeBookView.xaml",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\RecipeBookView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T20:20:58.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IngredientViewModel.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\IngredientViewModel.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\ViewModel\\IngredientViewModel.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\IngredientViewModel.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\ViewModel\\IngredientViewModel.cs",
+              "ViewState": "AQIAAAAAAACAyMzMzMwnwCYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:51:08.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RecipeBookViewModel.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\RecipeBookViewModel.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\ViewModel\\RecipeBookViewModel.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\RecipeBookViewModel.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\ViewModel\\RecipeBookViewModel.cs",
+              "ViewState": "AQIAAGwAAAAA/////x82wBcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:36:28.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IngredientView.xaml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\IngredientView.xaml",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\IngredientView.xaml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\IngredientView.xaml",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\IngredientView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-27T11:26:37.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FoodCategory.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\FoodCategory.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\Model\\FoodCategory.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\FoodCategory.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\Model\\FoodCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T14:33:56.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogService.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Services\\DialogService.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\Services\\DialogService.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Services\\DialogService.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\Services\\DialogService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:41:46.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\ViewModel\\ViewModelBase.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\ViewModel\\ViewModelBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T15:10:44.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DialogView.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\DialogView.xaml.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\DialogView.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\DialogView.xaml.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\DialogView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T12:30:53.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\BaseModel.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\Model\\BaseModel.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\Model\\BaseModel.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\Model\\BaseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T09:37:35.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DialogView.xaml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\DialogView.xaml",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\DialogView.xaml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\DialogView.xaml",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\DialogView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-27T11:17:37.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RecipeBookView.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\RecipeBookView.xaml.cs",
+              "RelativeDocumentMoniker": "AB-APU-Recipe-Book\\View\\RecipeBookView.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\MAU-DA204E-INL4\\MAU-DA204E-INL4\\AB-APU-Recipe-Book\\View\\RecipeBookView.xaml.cs",
+              "RelativeToolTip": "AB-APU-Recipe-Book\\View\\RecipeBookView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T13:56:34.952Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
